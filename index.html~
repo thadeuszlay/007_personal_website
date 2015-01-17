@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Thadeusz</title>
+		<style>
+			body{
+				background-color: black;
+				background: url("pic/bg.jpg");
+				background-size: cover;
+				background-position: center;
+				text-align: center;
+				color: white;	
+			}
+			header{
+				color: white;	
+				background: url("pic/bg.jpg");
+			}
+			h1{
+				font-size: 44px;			
+			}
+			ul{
+				padding: 10px;
+				background: rgba(227,0,111,.5);
+			}
+			li{
+				display: inline;
+				padding: 0 10px 0 10px;		
+			}
+			header a{
+				text-decoration: none;
+				border-style: solid;
+				border-width: 1px;	
+				color: white;
+			}
+			header a:hover{
+				color: rgba(226,226, 22, .7);			
+			}
+			header img{
+				border: 7px solid white;
+				border-radius: 20px;	
+				width: 100px;
+			}
+			article{
+				max-width: 500px;
+				margin: 0 auto;			
+			}
+			@media(max-width: 500px){
+				h1{
+						font-size: 22px;		
+				}
+				li{
+					display: block;				
+				}
+				body{
+					background: none;
+					background-color: red;				
+				}
+			}
+		</style>
+	</head>
+	<body>
+	<header>
+		<ul>
+			<li><a href="#">About me</a></li>
+			<li><a href="#">Projects</a></li>
+			<li><a href="#">Skills</a></li>		
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">More about me</a></li>
+		</ul>	
+		<img src="pic/profile.jpg">
+	</header>
+	<div>
+		<h1>Welcome to my place!</h1>
+		<p>Leave me your contact information if you want to.</p>
+		<input type="email" placeholder="your email">
+		<input type="submit" value="Send!">
+		  <article>
+		   <h2>VHS umami pop-up trust fund</h2>
+    		<p>Marfa church-key kitsch bicycle rights, 8-bit mixtape cardigan gentrify Echo Park. Street art swag brunch, next level roof party Schlitz hella organic keffiyeh selfies. You probably haven't heard of them polaroid hashtag +1, meggings biodiesel Portland High Life cray tumblr retro.</p>
+    		<button id="myButton">Like</button>
+		
+	</body>
+</html>
+	<script>
+		function clickFunc(){
+		
+			alert("clicked");		
+		
+		}
+
+	window.addEventListener('load',function(){
+    document.getElementsByTagName("button").addEventListener("click", clickFunc, false);
+});
+		</script>
