@@ -5,22 +5,24 @@
 		<style>
 			body{
 				background-color: black;
-				background: url("pic/bg.jpg");
+				background: url("pic/bg.JPG");
 				background-size: cover;
-				background-position: center;
+				background-position: center 35%;
 				text-align: center;
 				color: white;	
 			}
 			header{
 				color: white;	
-				background: url("pic/bg.jpg");
+				background: url("pic/header.JPG") transparent;
+				background-position: center 7%;
+				background-size: cover;
 			}
 			h1{
 				font-size: 44px;			
 			}
 			ul{
 				padding: 10px;
-				background: rgba(227,0,111,.5);
+				background: rgba(0,0,0,.5);
 			}
 			li{
 				display: inline;
@@ -33,12 +35,14 @@
 				color: white;
 			}
 			header a:hover{
-				color: rgba(226,226, 22, .7);			
+				color: rgba(0,200, 200, .7);			
 			}
 			header img{
-				border: 7px solid white;
-				border-radius: 20px;	
+				border: 3px solid white;
+				border-radius: 33px;	
 				width: 100px;
+				top: 50px;
+				position: relative;
 			}
 			article{
 				max-width: 500px;
@@ -46,7 +50,7 @@
 			}
 			@media(max-width: 500px){
 				h1{
-						font-size: 22px;		
+					font-size: 22px;		
 				}
 				li{
 					display: block;				
@@ -70,13 +74,14 @@
 		<img src="pic/profile.jpg">
 	</header>
 	<div>
+<br /><br />
 		<h1>Welcome to my place!</h1>
 		<p>Leave me your contact information if you want to.</p>
 		<input type="email" placeholder="your email">
 		<input type="submit" value="Send!">
 		  <article>
-		   <h2>VHS umami pop-up trust fund</h2>
-    		<p>Marfa church-key kitsch bicycle rights, 8-bit mixtape cardigan gentrify Echo Park. Street art swag brunch, next level roof party Schlitz hella organic keffiyeh selfies. You probably haven't heard of them polaroid hashtag +1, meggings biodiesel Portland High Life cray tumblr retro.</p>
+		   <h2>.o0o.</h2>
+    		<p>I'm currently in Munich. In a couple of days I'll be in Stuttgart. Feel free to leave me a message if you want to have a meet and greet. </p>
     		<button id="myButton">Like</button>
 		
 	</body>
@@ -90,6 +95,6 @@
 
 	window.addEventListener('load',function(){
     var myButtons=document.getElementsByTagName("button")
-    myButtons.addEventListener("click", clickFunc, false);
+    myButtons[0].addEventListener("click", clickFunc, false);
 });
 		</script>
